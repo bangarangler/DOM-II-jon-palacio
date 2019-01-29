@@ -47,3 +47,37 @@ funBusHeading.addEventListener("click", e => {
 funBusHeading.addEventListener("dblclick", e => {
   funBusHeading.style.borderBottom = "hidden";
 });
+
+////NAVIGATION CLICK EVENT
+//const allNav = document.querySelectorAll("nav a");
+
+//allNav[0].addEventListener("keyup", e => {
+//allNav.style.border = "1px solid blue";
+//});
+
+//ONLOAD LOG
+window.addEventListener("load", e => {
+  console.log("Page finished Loading!");
+});
+
+//KEYUP APPLY STYLE TO H2 IN HEADER
+const kUpH2 = document.querySelector(".intro h2");
+
+kUpH2.addEventListener("click", e => {
+  alert("Welcome To Fun Bus!");
+});
+
+//PREVENT DEFAULT OF ABOUT US LINK GOING TO GOOGLE
+const stopIt = document.querySelectorAll(".nav-link");
+console.log(stopIt);
+stopIt[1].addEventListener("click", e => {
+  e.preventDefault();
+});
+
+// STOP PROPIGATION
+const noBubble = document.querySelectorAll("footer p");
+
+noBubble[0].addEventListener("click", e => {
+  noBubble[0].style.color = "darkorchid";
+  e.stopPropagation();
+});
