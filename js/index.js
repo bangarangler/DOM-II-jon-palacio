@@ -81,3 +81,18 @@ noBubble[0].addEventListener("click", e => {
   noBubble[0].style.color = "darkorchid";
   e.stopPropagation();
 });
+
+TweenMax.to(".circleMoveRight", 2.5, { x: 250, rotation: 360, scale: 1.5 });
+
+TweenMax.staggerFrom(
+  ".superBounce",
+  0.8,
+  {
+    opacity: 0,
+    scale: 0,
+    ease: Bounce.easeOut,
+    //rotation: 360,
+    delay: 2.5
+  },
+  0.2
+);
