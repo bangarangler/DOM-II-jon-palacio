@@ -82,8 +82,7 @@ noBubble[0].addEventListener("click", e => {
   e.stopPropagation();
 });
 
-TweenMax.to(".circleMoveRight", 2.5, { x: 250, rotation: 360, scale: 1.5 });
-
+TweenMax.to(".circleMoveRight", 1, { x: 0, rotation: 360, scale: 1.0 });
 TweenMax.staggerFrom(
   ".superBounce",
   0.8,
