@@ -42,3 +42,8 @@ const funBusHeading = document.querySelector(".logo-heading");
 funBusHeading.addEventListener("click", e => {
   funBusHeading.style.borderBottom = "1px solid aqua";
 });
+
+//REMOVE UNDERLINE ON DOUBLE CLICK
+funBusHeading.addEventListener("dblclick", e => {
+  funBusHeading.style.borderBottom = "hidden";
+});
